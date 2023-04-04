@@ -15,12 +15,12 @@ function App() {
             <BrowserRouter>
                 <ThemeProvider theme={theme}>
                     <CssBaseline />
+                    <Layout>
                     <Routes>
-                        <Route element={<Layout />}>
-                            {/* <Route path="/" element={<Navigate to="dashboard" replace />} /> */}
-                            <Route path="/dashboard" element={<Dashboard/>} />
-                        </Route>
-                    </Routes>
+                        
+                            {/*    <Route path="/" element={<Navigate to="/dashboard" replace />} /> */}
+                            <Route path="/dashboard" element={<Dashboard />} />
+                    </Routes></Layout>
                 </ThemeProvider>
             </BrowserRouter>
         </div>
