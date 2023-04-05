@@ -26,9 +26,9 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.use(cors())
 
 /*ROUTES*/
-app.use('client',clientRoutes)
-app.use('general',generalRoutes)
-app.use('managment',managmentRoutes)
+app.use('/client',clientRoutes)
+app.use("/general", generalRoutes);
+app.use('/managment',managmentRoutes)
 app.use('/sales',salesRoutes)
 
 /*MONGOOSE*/
