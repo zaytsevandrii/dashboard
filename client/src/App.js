@@ -16,11 +16,11 @@ function App() {
                 <ThemeProvider theme={theme}>
                     <CssBaseline />
                     <Layout>
-                    <Routes>
-                        
+                        <Routes>
                             {/*    <Route path="/" element={<Navigate to="/dashboard" replace />} /> */}
                             <Route path="/dashboard" element={<Dashboard />} />
-                    </Routes></Layout>
+                        </Routes>
+                    </Layout>
                 </ThemeProvider>
             </BrowserRouter>
         </div>
